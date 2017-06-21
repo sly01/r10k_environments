@@ -5,6 +5,7 @@ forge "http://forge.puppetlabs.com"
 #mod "puppetlabs/inifile",     '1.5.0'
 #mod "puppetlabs/stdlib",      '4.11.0'
 #mod "puppetlabs/concat",      '2.1.0'
+mod 'saz-rsyslog', '5.0.0'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
@@ -15,3 +16,4 @@ forge "http://forge.puppetlabs.com"
 #mod 'apache',
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
 #  :branch => 'docs_experiment'
+#test

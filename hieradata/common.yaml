@@ -1,2 +1,9 @@
 ---
 message: "This node is using common data"
+
+rsyslog::client::log_local: true
+rsyslog::client::remote_servers:
+  - host: '10.10.10.10'
+    port: '1514'
+    pattern: '*.*'
+    protocol: 'tcp' 
