@@ -8,7 +8,7 @@ class profile::base {
 	nfs::client::mount { '/scripts':
 		server => '192.168.33.50',
 		share  => '/test',
-		options => 'rw,vers=3',
+		options => 'rw,nfsvers=3',
 	}
 
 }
