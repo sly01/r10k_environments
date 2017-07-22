@@ -11,6 +11,13 @@ class profile::base {
 		share  => '/test',
 		perm   => '0755',
 		options => 'rw,nfsvers=3',
+	} ->
+	file { '/root/hello.txt':
+		ensure => 'file',
+		source => '/scripts/hello.txt',
+		path   => '/root/hello.txt',
+		owner  => 'root',
+		group  => 'root',
+		mode   => '0644',
 	}
-
 }
