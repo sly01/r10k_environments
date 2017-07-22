@@ -6,8 +6,10 @@ class profile::base {
 	include ::nfs::client
 
 	nfs::client::mount { '/scripts':
+		mount => '/scripts',
 		server => '192.168.33.50',
 		share  => '/test',
+		perm   => '0755',
 		options => 'rw,nfsvers=3',
 	}
 
