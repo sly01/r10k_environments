@@ -1,0 +1,8 @@
+---
+profile::nginx::vhosts:
+  - 'fqdn': 'aerkoc2.mylabserver.com'
+    'port': 80
+    'server_aliases': ''
+  - 'fqdn': 'aerkoc2b.mylabserver.com'
+    'port': 80
+    'server_aliases': 'aerkoc2b1.mylabserver.com'
