@@ -18,6 +18,6 @@ mod 'echocat-nfs', '1.9.0'
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
 #  :branch => 'docs_experiment'
 #test
-mod 'nginx'
+mod 'nginx',
 	 :git 	 => 'https://github.com/sly01/puppet-nginx.git',
 	 :branch => 'master'
