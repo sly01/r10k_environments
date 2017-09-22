@@ -7,3 +7,17 @@ rsyslog::client::remote_servers:
     port: '1514'
     pattern: '*.*'
     protocol: 'tcp' 
+
+lvm::volume_groups::datavg:
+  datavg:
+    physical_volumes:
+    - '/dev/sdb'
+
+lvm::volume_groups::datavg::logical_volumes:
+  lvbigtemp:
+    volume_group: 'datavg'
+    size: '1G'
+    size_is_minsize: true
+    fs_type: 'ext4'
+    mountpath: '/bigtemp'
+    mountpath_require: true
