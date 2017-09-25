@@ -22,3 +22,4 @@ mod 'nginx',
 	 :git 	 => 'https://github.com/sly01/puppet-nginx.git',
 	 :branch => 'master'
 mod 'puppetlabs-lvm', '0.9.0'
+mod 'AlexCline-fstab', '0.5.4'
