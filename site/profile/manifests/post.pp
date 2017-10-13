@@ -1,6 +1,10 @@
 class profile::post {
-  mount { 'Unmounting of nfs share for hello.txt':
-    ensure => absent,
-		name => '/scripts',
+
+  fstab { 'Remove Another test fstab entry':
+    source => '192.168.33.50:/test',
+  	dest   => '/scripts',
+  	type   => 'nfs',
+  	ensure => absent,
   }
+
 }
