@@ -16,7 +16,7 @@ mod 'puppetlabs-stdlib', '4.20.0'
 #mod 'apache',
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
 #  :branch => 'docs_experiment'
-mod 'puppetlabs-puppetdb', '6.0.1'
+mod 'puppetlabs-puppetdb', '5.1.2'
 mod 'puppetlabs-inifile', '2.0.0'
 mod 'puppetlabs-firewall', '1.9.0'
 mod 'puppetlabs-postgresql', '5.2.0'
